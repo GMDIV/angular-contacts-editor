@@ -1,0 +1,22 @@
+{
+  "name": "angular-contacts-editor",
+  "version": "1.0.0",
+  "description": "A contacts editor created with Angular",
+  "main": "contacts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMDIV/angular-contacts-editor.git"
+  },
+  "author": "GMDIV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GMDIV/angular-contacts-editor/issues"
+  },
+  "homepage": "https://github.com/GMDIV/angular-contacts-editor#readme",
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
+}

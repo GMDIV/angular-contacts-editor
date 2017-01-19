@@ -1,5 +1,11 @@
 //pre-generated sample contact data
-var sample = [
+
+var app = angular.module('contactsEditor', []);
+
+app.controller('PeopleController', function($scope){
+
+
+ 	$scope.people = [
 		{
 			"name": "Gregory Huffman",
 			"email": "Praesent@pedenec.net",
@@ -901,3 +907,5 @@ var sample = [
 			"country": "Taiwan"
 		}
 	]
+
+});
