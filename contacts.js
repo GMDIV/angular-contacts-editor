@@ -3,7 +3,11 @@
 var app = angular.module('contactsEditor', []);
 
 app.controller('PeopleController', function($scope){
+	$scope.selectedIndex = null;
 
+	$scope.selectPerson = function(index){
+		$scope.selectedIndex = index;
+	}
 
  	$scope.people = [
 		{
