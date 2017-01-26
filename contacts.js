@@ -6,6 +6,7 @@ app.controller('PeopleController', function($scope){
 	$scope.selectedIndex = null; //initialize these for later use. Treat like react's this.state key value pairs.
 	$scope.selectedPerson = null;
 	$scope.search = "";
+	$scope.order = "email";
 
 	$scope.selectPerson = function(person, index){
 		$scope.selectedIndex = index;
