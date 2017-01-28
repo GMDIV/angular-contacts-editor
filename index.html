@@ -76,8 +76,8 @@
 				</tr>
 
 				<tr ng-repeat="person in people | filter:sensitiveSearch | orderBy: order "     
-					ng-style="{'background-color': $index == selectedIndex ? 'lightgray':''}"
-					ng-click="selectPerson(person, $index)"
+					ng-style="{'background-color': person.email == selectedPerson.email ? 'lightgray':''}"
+					ng-click="selectPerson(person)"
 				>
 					<td>{{$index}}</td>
 					<td>{{person.name}}</td>

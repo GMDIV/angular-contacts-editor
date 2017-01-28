@@ -8,8 +8,8 @@ app.controller('PeopleController', function($scope){
 	$scope.search = "";
 	$scope.order = "email";
 
-	$scope.selectPerson = function(person, index){
-		$scope.selectedIndex = index;
+	$scope.selectPerson = function(person){
+		//$scope.selectedIndex = index;
 		$scope.selectedPerson = person;
 	}
 
