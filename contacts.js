@@ -3,13 +3,12 @@
 var app = angular.module('contactsEditor', []);
 
 app.controller('PeopleController', function($scope){
-	$scope.selectedIndex = null; //initialize these for later use. Treat like react's this.state key value pairs.
-	$scope.selectedPerson = null;
-	$scope.search = "";
-	$scope.order = "email";
+	
+	$scope.selectedPerson = null;  //One of the "person" objects from "$scope.people", depending on selection
+	$scope.search = ""; //the string that is entered into the "search bar"
+	$scope.order = "email"; //default order is accending by email. This changes based on click
 
-	$scope.selectPerson = function(person){
-		//$scope.selectedIndex = index;
+	$scope.selectPerson = function(person){ //person is one of the scope.people objects
 		$scope.selectedPerson = person;
 	}
 
