@@ -2,14 +2,18 @@
 
 var app = angular.module('contactsEditor', []);
 
-app.controller('PeopleController', function($scope){
+app.controller('PersonDetailController', function($scope){
+
+});
+
+app.controller('PersonListController', function($scope, $rootScope){
 	
-	$scope.selectedPerson = null;  //One of the "person" objects from "$scope.people", depending on selection
+	$rootScope.selectedPerson = null;  //One of the "person" objects from "$scope.people", depending on selection
 	$scope.search = ""; //the string that is entered into the "search bar"
 	$scope.order = "email"; //default order is accending by email. This changes based on click
 
 	$scope.selectPerson = function(person){ //person is one of the scope.people objects
-		$scope.selectedPerson = person;
+		$rootScope.selectedPerson = person;
 	}
 
 	$scope.sensitiveSearch = function(person){
